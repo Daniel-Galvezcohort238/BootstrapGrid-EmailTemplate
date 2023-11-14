@@ -4,20 +4,85 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="styles.css"> 
+        <title>Bootstrap Project</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     </head>
     <body>
+        <nav class="nav nav-pills col-1 flex-column">
+            <a class="nav-link active" aria-current="page" href="#">Inbox</a>
+            <a class="nav-link disabled" aria-disabled="true">Spam</a>
+            <a class="nav-link disabled" aria-disabled="true">Drafts</a>
+            <a class="nav-link disabled" aria-disabled="true">starred</a>
+        </nav>
         <div class="container">
             <div class="row">
-                <div class="messages col">
-
+                <div class="inbox col">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </nav>
+                      <div class="card">
+                        <div class="card-header">
+                          nobody, no one, literally no one, not a living soul, me
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">I'm Sorry</h5>
+                          <p class="card-text">I'm so sorry.</p>
+                          <a href="#" class="btn btn-primary">open</a>
+                          <a href="#" class="btn btn-primary">mark as read</a>
+                          <a href="#" class="btn btn-primary">delete</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header">
+                          Steam
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">New SALE!!!</h5>
+                          <p class="card-text">Check out the new game sale!!</p>
+                          <a href="#" class="btn btn-primary">open</a>
+                          <a href="#" class="btn btn-primary">mark as read</a>
+                          <a href="#" class="btn btn-primary">delete</a>
+                        </div>
+                      </div>
+                      <div class="card border-primary" >
+                        <div class="card-header">
+                          Google
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Renew your gmail</h5>
+                          <p class="card-text">Your Gmail account has expired. Please follow this link to renew your gmail account <a href="#">http://NotAScam=true</a>.</p>
+                          <a href="#" class="btn btn-primary">open</a>
+                          <a href="#" class="btn btn-primary">mark as read</a>
+                          <a href="#" class="btn btn-primary">delete</a>
+                        </div>
+                      </div>
                 </div>
                 <div class="email-body col-8 col-xl-6 d-none d-md-block">
-
+                    <div class="card">
+                        <div class="card-body">
+                          <h6>Hello Mr. placeholder name,</h6>
+                          <h6 class="email-body-text">We regret to inform you that you gmail account has expired. To renew your account please follow this link <a href="#">http://NotAScam=true</a>.</h6>
+                          <h6>-From Google himself</h6>
+                          <h7><a href="#">G0o0gLe.legit@gmail.com</a> </h7>
+                        </div>
+                      </div>
                 </div>
                 <div class="compose col-3 d-none d-xl-block">
-                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Dear Mr. Google,</h5>
+                            <h5>First of all, thank you so much for taking the time out of your day to email me personally! This is obviously a very important matter, and I will make sure to renew my email as soon as possible!</h5>
+                            <h5>-Love, Placeholder Name</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
